@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Summer School on Cellular Automata Technology 2023</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fa fa-graduation-cap me-2"></i>Summer School<span class="fs-5"> 2023</span></h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link active">Project</a>
+                        <a href="team.html" class="nav-item nav-link">Mentors</a>
+                        <a href="project.html" class="nav-item nav-link">Previous Work</a>
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="team.html" class="dropdown-item">Supervisors</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div> -->
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <butaton type="button" onclick="window.location.href='https://www.cellularautomata.in/SummerSchool/index.html';" class="btn text-secondary ms-3"><i class="fa fa-building"></i></butaton>
+                    <!-- <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-building"></i></butaton> -->
+                    <a href="https://forms.gle/7GprKpaYombhJRQD7" target="_blank" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Registration</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 py-5">
+                        <div class="col-12 text-center">
+                            <h1 class="text-white animated zoomIn">Project</h1>
+                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Project</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+        <!-- Active Projects -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="position-relative d-inline text-primary ps-4">Active Projects</h6>
+                    <h2 class="mt-2">Active Projects in Summer School 2023</h2>
+                </div>
+                <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-12 text-center">
+                        <ul class="list-inline mb-5" id="portfolio-flters">
+                            <li class="btn px-3 pe-4 active" data-filter="*">All</li>
+                            <li class="btn px-3 pe-4" data-filter=".rc">Rezki Chemlal</li>
+                            <li class="btn px-3 pe-4" data-filter=".rg">RK Goyal</li>
+                            <li class="btn px-3 pe-4" data-filter=".nn">M Nazma Naskar </li>
+                            <li class="btn px-3 pe-4" data-filter=".sm">Sukanya Mukherjee</li>
+                            <li class="btn px-3 pe-4" data-filter=".ss">Sudhakar Sahoo</li>
+                            <li class="btn px-3 pe-4" data-filter=".kb">Kamalika Bhattacharjee</li>
+                            <li class="btn px-3 pe-4" data-filter=".oth">Others</li>
+                            <!-- <li class="btn px-3 pe-4" data-filter=".second">Summer School 2022</li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="row g-4 portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item rc wow zoomIn" data-wow-delay="0.1s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        SEIQR epidemiological model using PCA (Probabilistic Cellular Automata)
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Aditi Sant<sup>1</sup> 
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp; Rezki Chemlal<sup>2</sup> (rchemlal@gmail.com)<br><br><sup>1</sup> MKSSS’s Cummins College of Engineering for Women, Pune <br><sup>2</sup> Bejaia university</p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>SEIQR epidemiological model using PCA (Probabilistic Cellular Automata)</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Aditi Sant and Rezki Chemlal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item rc wow zoomIn" data-wow-delay="0.6s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Urban modeling using cellular automata
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Aliva Pattanaik<sup>1</sup> and Sweeti Tiwari<sup>1</sup> 
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp; Rezki Chemlal<sup>2</sup> (rchemlal@gmail.com)<br><br><sup>1</sup> Institute of Mathematics and Applications<br><sup>2</sup> Bejaia university</p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>Urban modeling using cellular automata</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Aliva Pattanaik, Sweeti Tiwari and Rezki Chemlal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item rc wow zoomIn" data-wow-delay="0.3s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Fire spread modeling using probabilistic cellular automata
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Jishnu Adhikary<sup>1</sup> and Rohit Ghosh<sup>1</sup> 
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp; Rezki Chemlal<sup>2</sup> (rchemlal@gmail.com)<br><br><sup>1</sup> Government College of Engineering and Ceramic Technology affiliated under MAKAUT<br><sup>2</sup> Bejaia university</p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>Fire spread modeling using probabilistic cellular automata</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Jishnu Adhikary, Rohit Ghosh and Rezki Chemlal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item rc wow zoomIn" data-wow-delay="0.6s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        A partitionned asynchronous cellular automata model for language shift in Algeria
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Nacira Allaoua<sup>1</sup> 
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp; Rezki Chemlal<sup>2</sup> (rchemlal@gmail.com)<br><br><sup>1,2</sup> Bejaia university</p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>A partitionned asynchronous cellular automata model for language shift in Algeria</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Nacira Allaoua and Rezki Chemlal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item rc wow zoomIn" data-wow-delay="0.2s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Cellular automata models of road traffic
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Noura Ould Ali<sup>1</sup> 
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp; Rezki Chemlal<sup>2</sup> (rchemlal@gmail.com)<br><br><sup>1,2</sup> Bejaia university</p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>Cellular automata models of road traffic</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Noura Ould Ali and Rezki Chemlal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item rc wow zoomIn" data-wow-delay="0.1s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Exploring the conditions under which cellular automata can exhibit chaotic behavior
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Yousfi Hasna<sup>1</sup> and Asma Ladjeroud<sup>1</sup> 
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp; Rezki Chemlal<sup>2</sup> (rchemlal@gmail.com)<br><br><sup>1</sup>Echahid Cheikh Larbi Tebessi University, Tebessa, 12002, Algeria.<br><sup>2</sup> Bejaia university</p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>Exploring the conditions under which cellular automata can exhibit chaotic behavior</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Aditi Sant, Sweeti Tiwari and Rezki Chemlal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item rg wow zoomIn" data-wow-delay="0.3s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Information Theoretic Analysis of ECA Rules
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Vinod Jha<sup>1</sup>
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp; RK Goyal<sup>2</sup> (rkgmoocs@gmail.com)<br><br><sup>1</sup>Indian Institute of Engineering Science and Technology Shibpur<br><sup>2</sup> University School of Information, Communication
+                                and Technology (USICT), Guru Gobind Singh Indraprastha University, Delhi.</p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>Information Theoretic Analysis of ECA Rules</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Vinod Jha and RK Goyal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item rg wow zoomIn" data-wow-delay="0.6s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        On the usage of HodgePodge machine and related models of excitable media in analyzing social phenomena (like, opinion formation)
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Ramachandran SS<sup>1</sup>
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp; RK Goyal<sup>2</sup> (rkgmoocs@gmail.com)<br><br><sup>1</sup>North Carolina State University<br><sup>2</sup> University School of Information, Communication and Technology (USICT), Guru
+                                Gobind Singh Indraprastha University, Delhi.</p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>On the usage of HodgePodge machine and related models of excitable media in analyzing social phenomena (like, opinion formation)</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Ramachandran SS and RK Goyal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item rg wow zoomIn" data-wow-delay="0.1s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        When Network Science Meets Cellular Automata: Mining ECA behavior using network-science centric techniques
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Deepshikha Urmaliya<sup>1</sup> and  Sanchit baweja <sup>2</sup>                                
+                                        </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp; RK Goyal<sup>3</sup> (rkgmoocs@gmail.com)<br><br><sup>1</sup>Institute of Mathematics and Applications<br><sup>2</sup>Maharaja Surajmal Institute of Technology<br><sup>3</sup> University
+                                School of Information, Communication and Technology (USICT), Guru Gobind Singh Indraprastha University, Delhi.</p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>When Network Science Meets Cellular Automata: Mining ECA behavior using network-science centric techniques</small>
+                                    <a class="d-block text-white mt-1 mb-0" href=""> Deepshikha Urmaliya,  Sanchit baweja and RK Goyal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 portfolio-item rg wow zoomIn" data-wow-delay="0.3s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        When Genetic Algorithm Meets Cellular Automata: A mutual benefit perspective
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Avik Shakhari<sup>1</sup> and Saatvik Sankarram <sup>2</sup>
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp; RK Goyal<sup>3</sup> (rkgmoocs@gmail.com)<br><br><sup>1</sup>Institute of Mathematics and Applictions, Andharua, Bhubaneswar<br><sup>2</sup>National Institute Of Technology, Tiruchirappalli<br><sup>3</sup>                                University School of Information, Communication and Technology (USICT), Guru Gobind Singh Indraprastha University, Delhi.</p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>When Genetic Algorithm Meets Cellular Automata: A mutual benefit perspective</small>
+                                    <a class="d-block text-white mt-1 mb-0" href=""> Avik Shakhari, Saatvik Sankarram  and RK Goyal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item nn wow zoomIn" data-wow-delay="0.2s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Designing of multi-label pattern classifiers using hybrid cellular automata
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Medha Sen<sup>1</sup>Tandeep Das                                 
+                                        
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp; M Nazma Naskar<sup>2</sup> (naskar.preeti@gmail.com)<br><br><sup>1</sup>Indian Association for the Cultivation of Science<sup>2</sup>KIIT University Bhubaneswar</p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>Designing of multi-label pattern classifiers using hybrid cellular automata</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Medha Sen, Tandeep Das and M Nazma Naskar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 portfolio-item sm wow zoomIn" data-wow-delay="0.3s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Designing of a pattern classifier using 3-neighborhood d-state CA with d>2
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Sindhuja J<sup>1</sup>                              
+                                        
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp;Sukanya Mukherjee <sup>2</sup> (sukanyaiem@gmail.com)<br><br><sup>1</sup>National Institute Of Technology, Tiruchirappalli<br><sup>2</sup>Institute of Engineering & Management, Kolkata,
+                                India
+                            </p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>Designing of a pattern classifier using 3-neighborhood d-state CA with d>2</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Sindhuja J and Sukanya Mukherjee</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 portfolio-item sm wow zoomIn" data-wow-delay="0.6s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Designing of a pattern classifier using k-neighborhood binary CA with k>3
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        B.S.Subrahmanya Bharadwaaj<sup>1</sup>  and Harisankar VS<sup>1</sup>                             
+                                        
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp;Sukanya Mukherjee <sup>2</sup> (sukanyaiem@gmail.com)<br><br><sup>1</sup>National Institute Of Technology, Tiruchirappalli<br><sup>2</sup>Institute of Engineering & Management, Kolkata,
+                                India
+                            </p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i> Designing of a pattern classifier using k-neighborhood binary CA with k>3.</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">B.S.Subrahmanya Bharadwaaj, Harisankar VSand Sukanya Mukherjee</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 portfolio-item sm wow zoomIn" data-wow-delay="0.1s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Study of fully asynchronous CA for clustering problem
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Virendra Gautam<sup>1</sup>                              
+                                        
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp;Sukanya Mukherjee <sup>2</sup> (sukanyaiem@gmail.com)<br><br><sup>1</sup>Indian Institute of Engineering Science and Technology Shibpur<sup>2</sup>Institute of Engineering & Management,
+                                Kolkata, India</p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>Study of fully asynchronous CA for clustering problem</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Virendra Gautamand and Sukanya Mukherjee</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item ss wow zoomIn" data-wow-delay="0.2s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Solutions on 1-D and 2-D Density Classification Problem using Number Conserving Programmable Cellular Automata with Applications
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Adbdullah Kazi<sup>1</sup>   and Swarnava saha<sup>2</sup>                            
+                                        
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp;Sudhakar Sahoo<sup>3</sup> (sudhakar.sahoo@gmail.com)<br><br><sup>1</sup>University of Mumbai<br><sup>2</sup>The Neotia University
+                                <br><sup>3</sup>Institute of Mathematics and Applications, Bhubaneshwar, Odisha, India </p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>Solutions on 1-D and 2-D Density Classification Problem using Number Conserving Programmable Cellular Automata with Applications</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Adbdullah Kazi,  Swarnava saha and Sudhakar Sahoo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item ss wow zoomIn" data-wow-delay="0.3s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        A Study on the various parameters of Cellular Automata rules that are used for Optimization Techniques
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Arijit Ghosh<sup>1</sup>                        
+                                        
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp;Sudhakar Sahoo<sup>2</sup> (sudhakar.sahoo@gmail.com)<br><br><sup>1</sup>Utkal University, Bhubaneswar, Odisha
+                                <br><sup>2</sup>Institute of Mathematics and Applications, Bhubaneshwar, Odisha, India </p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>A Study on the various parameters of Cellular Automata rules that are used for Optimization Techniques</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Arijit Ghosh and Sudhakar Sahoo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item ss wow zoomIn" data-wow-delay="0.3s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Modeling and Pricing Complex Financial Derivatives using Stochastic Cellular Automata in a Prescriptive Business Analytics Framework
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Sudhanshu Sekhar Sahoo<sup>1</sup>                        
+                                        
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp;Sudhakar Sahoo<sup>2</sup> (sudhakar.sahoo@gmail.com)<br><br><sup>1</sup>Utkal University, Bhubaneswar, Odisha
+                                <br><sup>2</sup>Institute of Mathematics and Applications, Bhubaneshwar, Odisha, India </p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i> Modeling and Pricing Complex Financial Derivatives using Stochastic Cellular Automata in a Prescriptive Business Analytics Framework</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">Sudhanshu Sekhar Sahoo and Sudhakar Sahoo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item kb wow zoomIn" data-wow-delay="0.1s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Modeling and Pricing Complex Financial Derivatives using Stochastic Cellular Automata in a Prescriptive Business Analytics Framework
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Suraj Gupta<sup>1</sup>                          
+                                        
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp;Kamalika Bhattacharjee<sup>1</sup> (kamalika.it@gmail.com)<br><br><sup>1</sup>National Institute Of Technology, Tiruchirappalli </p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>Solutions on 1-D and 2-D Density Classification Problem using Number Conserving Programmable Cellular Automata with Applications</small>
+                                    <a class="d-block text-white mt-1 mb-0" href=""> Suraj Gupta and Kamalika Bhattacharjee</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item kb wow zoomIn" data-wow-delay="0.1s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Reversible Cellular Automata For Pattern Classification
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        BABY CJ<sup>1</sup>                          
+                                        
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp;Kamalika Bhattacharjee<sup>2</sup> (kamalika.it@gmail.com)<br><br><sup>1</sup>Government College Of Engineerimg,Kannur,Kerala<br><sup>2</sup>National Institute Of Technology, Tiruchirappalli
+                            </p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>Reversible Cellular Automata For Pattern Classification</small>
+                                    <a class="d-block text-white mt-1 mb-0" href=""> BABY CJ and Kamalika Bhattacharjee</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 portfolio-item oth wow zoomIn" data-wow-delay="0.3s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Development of  Pseudo random Number Generator Using Temporally Non-Uniform Cellular Automata
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Subrata Paul<sup>1</sup>                          
+                                        
+                                    </span>
+                                <br> <b>Supervisor. </b>&nbsp;&nbsp;Sukanta Das<sup>1</sup> and Kamalika Bhattacharjee<sup>2</sup> (kamalika.it@gmail.com)<br><br><sup>1</sup>Indian Institute of Engineering Science and Technology Shibpur<br><sup>2</sup>National
+                                Institute Of Technology, Tiruchirappalli
+                            </p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>Development of  Pseudo random Number Generator Using Temporally Non-Uniform Cellular Automata</small>
+                                    <a class="d-block text-white mt-1 mb-0" href=""> Subrata Paul, Kamalika Bhattacharjee and Sukanta Das</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item oth wow zoomIn" data-wow-delay="0.2s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                <span class="latex" style="font-size: 1.4em;"><b>
+                                        Modelling urban change with cellular automata
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                        Nassima AIT SADI<sup>1</sup>                          
+                                        
+                                    </span><br><br>
+                                <sup>1</sup>Bejaia university
+                            </p>
+                            <!-- <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <h5 class="mb-3">Defining Reachability Tree under Adiabatic and Reflexive Boundary Condition Cellular Automata</h5>
+                                <p>Nazma Naskar and B K Sivaraj</p> -->
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-light" href="#" target="_blank"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <div class="mt-auto">
+                                    <small class=" text-white"><i class="fa fa-folder me-2"></i>Modelling urban change with cellular automata</small>
+                                    <a class="d-block text-white mt-1 mb-0" href="">  Nassima AIT SADI</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.1s">
+                            <div class="position-relative rounded overflow-hidden">
+                                <p class="latex" style="text-align: justify; text-justify: inter-word;">
+                                    <span class="latex" style="font-size: 1.4em;"><b>
+                                        Isomorphism In Cellular Automata
+    
+                                    </b></span><br><span class="latex" style="font-size: 1.2em;">
+                                    Vicky Vikrant
+                                    <br>Mentor: Sukanya Mukherjee</span><br>
+                                    <br> <b>Abstract.</b>&nbsp;&nbsp; This work focuses on the isomorphism of cellular automata (CAs). Two cellular automata are said to be isomorphic if their configurations evolve in the similar way. As a model, here
+                                    we use non-uniform elementary cellular automata under null boundary and discover few inherent properties of CAs to decide whether the given cellular automata are isomorphic.
+                                </p>
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-light" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                    <div class="mt-auto">
+                                        <small class="text-white"><i class="fa fa-folder me-2"></i>Isomorphism In Cellular Automata</small>
+                                        <a class="h5 d-block text-white mt-1 mb-0" href="">Vicky Vikrant</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- End Active Projects -->
+
+        <!-- Proposed Projects Start -->
+        <div class="container-xxl py-5 ">
+            <div class="container px-lg-5 ">
+                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp " data-wow-delay="0.1s ">
+                    <h6 class="position-relative d-inline text-primary ps-4 ">Proposed Projects</h6>
+                    <h2 class="mt-2 ">Projects of the Summer School on Cellular Automata 2023</h2>
+                </div>
+                <!-- <div align="center ">
+                    Will be updated soon...
+                </div> -->
+                <div class="row g-4 ">
+
+                    <div class="col-lg-12 col-md-6 wow zoomIn " data-wow-delay="0.1s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">Supervised by Dr. Kamalika Bhattacharjee</h5>
+                            <p>Role of distant neighbor in maximality and randomness;<br> Reversible Cellular Automata For Classification;<br> Multiple Stream Parallel Random Number Generation using Cellular Automata;</p>
+
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 wow zoomIn " data-wow-delay="0.3s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">Supervised by Dr. Sudhakar Sahoo</h5>
+                            <p>Solutions on 1-D and 2-D Density Classification Problem using Number Conserving Programmable Cellular Automata with Applications;<br> Modeling and Pricing Complex Financial Derivatives using Stochastic Cellular Automata in
+                                a Prescriptive Business Analytics Framework;</p>
+
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-6 wow zoomIn " data-wow-delay="0.3s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">Supervised by Dr. Rezki Chemlal</h5>
+                            <p>SEIQR epidemiological model using PCA (Probabilistic Cellular Automata);<br> Urban modeling using cellular automata;<br> Fire spread modeling using probabilistic cellular automata;<br> Attractors of cellular automata;<br> A
+                                partitionned asynchronous cellular automata model for language shift in Algeria;
+                            </p>
+
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-6 wow zoomIn " data-wow-delay="0.1s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">Supervised by Dr. RK Goyal</h5>
+                            <p>When Network Science Meets Cellular Automata: Mining ECA behavior using network-science centric techniques;<br> When Genetic Algorithm Meets Cellular Automata: A mutual benefit perspective;<br> On the usage of HodgePodge machine
+                                and related models of excitable media in analyzing social phenomena (like, opinion formation);<br> Information Theoretic Analysis of ECA Rules;
+
+                            </p>
+
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 wow zoomIn " data-wow-delay="0.1s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">Supervised by Dr. Sukanya Mukherjee</h5>
+                            <p>Designing of a pattern classifier using k-neighborhood binary CA with k>3;<br> Designing of a pattern classifier using 3-neighborhood d-state CA with d>2;<br> Study of fully asynchronous CA for clustering problem;
+
+                            </p>
+
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-6 wow zoomIn " data-wow-delay="0.1s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">Other Projects</h5>
+                            <p>A Study on the various parameters of Cellular Automata rules that are used for Optimization Techniques;<br> Exploring the conditions under which cellular automata can exhibit chaotic behavior;<br> Modelling urban change with
+                                cellular automata;<br> Development of Pseudo random Number Generator Using Temporally Non-Uniform Cellular Automata;<br> Exploring the conditions under which cellular automata can exhibit chaotic behavior;<br> Early detection
+                                of Parkinson's disease based on Non Uniform Cellular Automata (supervised by Prof L Jeganathan);
+                            </p>
+
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-12 col-md-6 wow zoomIn " data-wow-delay="0.1s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">Role of distant neighbor in maximality and randomness</h5>
+                            <p>Supervised by Dr. Kamalika Bhattacharjee</p>
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn " data-wow-delay="0.3s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">Solutions on 1-D and 2-D Density Classification Problem using Number Conserving Programmable Cellular Automata with Applications</h5>
+                            <p>Supervised by Dr. Sudhakar Sahoo</p>
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn " data-wow-delay="0.6s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">SEIQR epidemiological model using PCA (Probabilistic Cellular Automata)</h5>
+                            <p>Supervised by Dr. Rezki Chemlal</p>
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn " data-wow-delay="0.1s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">Urban modeling using cellular automata</h5>
+                            <p>Supervised by Dr. Rezki Chemlal</p>
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn " data-wow-delay="0.3s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">When Network Science Meets Cellular Automata: Mining ECA behavior using network-science centric techniques</h5>
+                            <p>Supervised by Dr. RK Goyal</p>
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn " data-wow-delay="0.6s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">A Study on the various parameters of Cellular Automata rules that are used for Optimization Techniques</h5>
+                         
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 wow zoomIn " data-wow-delay="0.1s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">Exploring the conditions under which cellular automata can exhibit chaotic behavior</h5>
+                            <p></p>
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn " data-wow-delay="0.3s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">When Genetic Algorithm Meets Cellular Automata: A mutual benefit perspective</h5>
+                            <p>Supervised by Dr. RK Goyal</p>
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn " data-wow-delay="0.6s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">Designing of a pattern classifier using k-neighborhood binary CA with k>3.</h5>
+                            <p>Supervised by Dr. Sukanya Mukherjee</p>
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn " data-wow-delay="0.1s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">Reversible Cellular Automata For Classification</h5>
+                            <p>Supervised by Dr. Kamalika Bhattacharjee</p>
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn " data-wow-delay="0.3s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">When Network Science Meets Cellular Automata: Mining ECA behavior using network-science centric techniques</h5>
+                            <p>Supervised by Dr. RK Goyal</p>
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn " data-wow-delay="0.6s ">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded ">
+                            <div class="service-icon flex-shrink-0 ">
+                                <i class="fa fa-project-diagram fa-2x "></i>
+                            </div>
+                            <h5 class="mb-3 ">Designing of a pattern classifier using k-neighborhood binary CA with k>3</h5>
+                            <p>Supervised by Dr. Sukanya Mukherjee</p>
+                            <a class="btn px-3 mt-auto mx-auto " href="#">Read More</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Previous Projects  (Service) End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow " data-wow-delay="0.1s ">
+            <div class="container py-5 px-lg-5 ">
+                <div class="row g-5 ">
+                    <div class="col-md-6 col-lg-3 ">
+                        <iframe src="subrata.html " width="100% " height="350px "></iframe>
+                    </div>
+                    <div class="col-md-6 col-lg-3 ">
+                        <h5 class="text-white mb-4 ">Popular Link</h5>
+                        <a class="btn btn-link " href="about.html ">About Us</a>
+                        <a class="btn btn-link " href="contact.html ">Contact Us</a>
+                        <a class="btn btn-link " href=" ">Privacy Policy</a>
+                        <a class="btn btn-link " href=" ">Terms & Condition</a>
+                        <a class="btn btn-link " href="../../index.html">Cellular Automata India</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3 ">
+                        <h5 class="text-white mb-4 ">Mentors</h5>
+                        <div class="row g-2 ">
+                            <div class="col-3 ">
+                                <a href="https://www.iiests.ac.in/IIEST/Faculty/it-sukanta" target="_blank"><img class="img-fluid " src="img/tch1.jpg " alt="Image "></a>
+                            </div>
+                            <div class="col-3 ">
+                                <a href="https://www.nitt.edu/home/academics/departments/cse/faculty/kamalika/" target="_blank"> <img class="img-fluid " src="img/tch2.jpg " alt="Image "></a>
+                            </div>
+                            <div class="col-3 ">
+                                <a href="https://www.researchgate.net/profile/Sukanya-Mukherjee-2 " target="_blank"> <img class="img-fluid " src="img/tch3.jpg " alt="Image "></a>
+                            </div>
+                            <!-- <div class="col-3 ">
+                                <a href="https://www.nitt.edu/home/academics/departments/meta/faculty/prince/ " target="_blank"> <img class="img-fluid " src="img/tch4.jpg " alt="Image "></a>
+                            </div> -->
+                            <div class="col-3 ">
+                                <a href="http://www.univ-bejaia.dz/staff/r_chemlal" target="_blank"> <img class="img-fluid " src="img/tch5.jpg " alt="Image "></a>
+                            </div>
+                            <div class="col-3 ">
+                                <a href="https://www.researchgate.net/profile/Sudhakar-Sahoo " target="_blank"> <img class="img-fluid " src="img/tch6.jpg " alt="Image "></a>
+                            </div>
+                            <div class="col-3 ">
+                                <a href="https://cse.kiit.ac.in/profiles/m-nazma-bj-naskar/" target="_blank"> <img class="img-fluid " src="img/tch7.jpg " alt="Image "></a>
+                            </div>
+                            <div class="col-3 ">
+                                <a href="https://typeset.io/authors/rinkaj-goyal-60anf8c10b" target="_blank"><img class="img-fluid " src="img/tch8.jpg " alt="Image "></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 ">
+                        <h5 class="text-white mb-4 ">Newsletter</h5>
+                        <p>Feel free to contact us</p>
+                        <div class="position-relative w-100 mt-3 ">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5 " type="text " placeholder="Your Email " style="height: 48px; ">
+                            <button type="button " onclick="window.location.href='mailto: subratapaul.sp.sp@gmail.com' ; " class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2 "><i class="fa fa-paper-plane text-primary fs-4 "></i></button>
+                        </div>
+                        <!-- <h5 class="text-white mb-4 ">Get In Touch</h5> -->
+                        <br>
+                        <p><i class="fa fa-envelope me-3 "></i><small>cellularautomataindia@gmail.com</small></p>
+                        <p><i class="fa fa-map-marker-alt me-3 "></i>India</p>
+                        <!-- <p><i class="fa fa-phone-alt me-3 "></i>+000 000 00000</p> -->
+
+                        <!-- <div class="d-flex pt-2 ">
+                            <a class="btn btn-square text-primary bg-white my-1 " href=" "><i class="fa fa-id-badge "></i></a>
+                            <a class="btn btn-square text-primary bg-white my-1 " href=" "><i class="fab fa-researchgate "></i></a>
+                            <a class="btn btn-square text-primary bg-white my-1 " href=" "><i class="fab fa-github "></i></a>
+                            <a class="btn btn-square text-primary bg-white my-1 " href=" "><i class="fab fa-linkedin-in "></i></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5 ">
+                <div class="copyright ">
+                    <div class="row ">
+                        <div class="col-md-7 text-center text-md-start mb-3 mb-md-0 ">
+                            &copy; <a class="border-bottom" href="#">Summer School on Cellular Automata Technology 2023</a>;&nbsp;
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal ". Thank you for your support. ***/-->
+                            Designed By <a class="border-bottom " href="https://www.cellularautomata.in ">Cellular Automata India</a>
+                        </div>
+                        <div class="col-md-5 text-center text-md-end ">
+                            <div class="footer-menu ">
+                                <a href="# ">Home</a>
+                                <a href="# ">Cookies</a>
+                                <a href="# ">Help</a>
+                                <a href="# ">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
